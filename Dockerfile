@@ -20,7 +20,7 @@ RUN curl https://packages.microsoft.com/config/ubuntu/16.04/mssql-server-2017.li
         # https://github.com/Microsoft/mssql-docker/issues/213
         # mssql-server-is \
     && /opt/mssql/bin/mssql-conf set sqlagent.enabled true \
-    #&& LC_ALL=en_US.UTF-8 SSIS_PID=Developer ACCEPT_EULA=Y /opt/ssis/bin/ssis-conf -n setup \
+    #&& LC_ALL=en_US.UTF-8 ACCEPT_EULA=Y /opt/ssis/bin/ssis-conf -n setup \
     #&& echo 'export PATH="$PATH:/opt/ssis/bin"' >> ~/.bashrc \
     && echo 'export PATH="$PATH:/opt/mssql-tools/bin"' >> ~/.bashrc \
     && /bin/bash -c "source ~/.bashrc"
