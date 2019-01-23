@@ -11,7 +11,7 @@ RUN apt-get update && apt-get install -y \
 RUN curl https://packages.microsoft.com/config/ubuntu/16.04/mssql-server-2017.list > /etc/apt/sources.list.d/mssql-server-2017.list \
     # && curl https://packages.microsoft.com/config/ubuntu/16.04/prod.list | tee /etc/apt/sources.list.d/msprod.list \
     && curl https://packages.microsoft.com/keys/microsoft.asc | apt-key add - \
-    && apt-get update && DEBIAN_FRONTEND=noninteractive MSSQL_PID=Developer ACCEPT_EULA=Y MSSQL_SA_PASSWORD=Pass@word apt-get install -y \
+    && apt-get update && DEBIAN_FRONTEND=noninteractive ACCEPT_EULA=Y apt-get install -y \
         # unixodbc-dev \
         msodbcsql \
         mssql-tools \
