@@ -4,7 +4,7 @@ FROM microsoft/mssql-server-linux:2017-CU12
 RUN apt-get update && apt-get install -y \
         apt-transport-https \
         debconf-utils \
-        curl
+        curl \
     && rm -rf /var/lib/apt/lists/*
 
 ## SQL Server Drivers, Command Line Tools, Full Text Search, Integration Services
