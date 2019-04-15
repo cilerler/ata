@@ -1,4 +1,4 @@
-FROM microsoft/mssql-server-linux:2017-CU12
+FROM mcr.microsoft.com/mssql/server:2017-CU13-ubuntu
 
 # apt-get and system utilities
 RUN apt-get update && apt-get install -y \
