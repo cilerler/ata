@@ -10,7 +10,6 @@ RUN wget -O /etc/apt/sources.list.d/mssql-server-2017.list https://packages.micr
         # https://github.com/Microsoft/mssql-docker/issues/213
     #&& LC_ALL=en_US.UTF-8 ACCEPT_EULA=Y /opt/ssis/bin/ssis-conf -n setup \
     #&& echo 'export PATH="$PATH:/opt/ssis/bin"' >> ~/.bashrc \
-    #&& /bin/bash -c "source ~/.bashrc" \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists
 
