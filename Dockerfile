@@ -5,7 +5,6 @@ RUN wget -O /etc/apt/sources.list.d/mssql-server-2017.list https://packages.micr
     && apt-get update \
     && apt-get install -y \
         mssql-server-fts \
-        # mssql-server-ha \
         # mssql-server-is \
         # Integration Services is not working in Docker yet
         # https://github.com/Microsoft/mssql-docker/issues/213
