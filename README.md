@@ -4,7 +4,7 @@
 [![](https://images.microbadger.com/badges/version/cilerler/mssql-server-linux:2017-CU16.svg) ![](https://images.microbadger.com/badges/image/cilerler/mssql-server-linux.svg)](https://microbadger.com/images/cilerler/mssql-server-linux "inspect on microbadger.com")
 
 
-# Microsoft SQL Server with Drivers, Command Line Tools, Full Text Search etc.
+# Microsoft SQL Server w/ Full-Text Search
 
 ## How to use this image
 
