@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/mssql/server:2017-CU16-ubuntu
+FROM mcr.microsoft.com/mssql/server:2017-CU20-ubuntu
 
 RUN wget -O /etc/apt/sources.list.d/mssql-server-2017.list https://packages.microsoft.com/config/ubuntu/16.04/mssql-server-2017.list \
     && export DEBIAN_FRONTEND=noninteractive ACCEPT_EULA=Y \

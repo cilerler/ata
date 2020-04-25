@@ -1,7 +1,7 @@
 [![](http://dockeri.co/image/cilerler/mssql-server-linux)](https://hub.docker.com/r/cilerler/mssql-server-linux)
 
 <!-- ![](https://img.shields.io/badge/docker-cilerler%2Fmssql--server--linux-blue.svg?logo=docker) -->
-[![](https://images.microbadger.com/badges/version/cilerler/mssql-server-linux:2017-CU16.svg) ![](https://images.microbadger.com/badges/image/cilerler/mssql-server-linux.svg)](https://microbadger.com/images/cilerler/mssql-server-linux "inspect on microbadger.com")
+[![](https://images.microbadger.com/badges/version/cilerler/mssql-server-linux:2017-CU20.svg) ![](https://images.microbadger.com/badges/image/cilerler/mssql-server-linux.svg)](https://microbadger.com/images/cilerler/mssql-server-linux "inspect on microbadger.com")
 
 
 # Microsoft SQL Server w/ Full-Text Search
