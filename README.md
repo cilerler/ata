@@ -9,7 +9,7 @@
 ## How to use this image
 
 ```powershell
-docker run -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=yourStrong(!)Password" -e "MSSQL_AGENT_ENABLED=true" -p 1433:1433 -d cilerler/mssql-server-linux:latest
+docker run -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=yourStrong(!)Password" -e "MSSQL_AGENT_ENABLED=true" -e "MSSQL_ENABLE_HADR=0" -p 1433:1433 -d cilerler/mssql-server-linux:latest
 ```
 
 ## Environment Variables
