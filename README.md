@@ -1,7 +1,7 @@
 [![](http://dockeri.co/image/cilerler/mssql-server-linux)](https://hub.docker.com/r/cilerler/mssql-server-linux)
 
 <!-- ![](https://img.shields.io/badge/docker-cilerler%2Fmssql--server--linux-blue.svg?logo=docker) -->
-[![](https://images.microbadger.com/badges/version/cilerler/mssql-server-linux:2017-CU20.svg) ![](https://images.microbadger.com/badges/image/cilerler/mssql-server-linux.svg)](https://microbadger.com/images/cilerler/mssql-server-linux "inspect on microbadger.com")
+[![](https://images.microbadger.com/badges/version/cilerler/mssql-server-linux:2019-CU14-ubuntu-16.04.svg) ![](https://images.microbadger.com/badges/image/cilerler/mssql-server-linux.svg)](https://microbadger.com/images/cilerler/mssql-server-linux "inspect on microbadger.com")
 
 
 # Microsoft SQL Server w/ Full-Text Search
@@ -28,3 +28,6 @@ docker run -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=yourStrong(!)Password" -e "MSSQL_A
 - **<valid product id>** : This will run the container with the edition that is associated with the PID
 
 For a complete list of environment variables that can be used, refer to the documentation [here](https://docs.microsoft.com/en-us/sql/linux/quickstart-install-connect-docker).
+
+**SSIS_PID** is the Product ID (PID) or Edition that SSIS will run with.
+For more details https://hub.docker.com/_/microsoft-mssql-server
