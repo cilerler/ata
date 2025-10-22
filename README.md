@@ -19,7 +19,7 @@ docker run -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=yourStrong(!)Password" -e "MSSQL_A
 - **Standard** : This will run the container using the Standard Edition
 - **Enterprise** : This will run the container using the Enterprise Edition
 - **EnterpriseCore** : This will run the container using the Enterprise Edition Core
-- **<valid product id>** : This will run the container with the edition that is associated with the PID
+- **{valid product id}** : This will run the container with the edition that is associated with the PID
 
 For a complete list of environment variables that can be used, refer to the documentation [here](https://docs.microsoft.com/en-us/sql/linux/quickstart-install-connect-docker).
 
