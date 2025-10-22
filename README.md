@@ -1,14 +1,8 @@
-[![](http://dockeri.co/image/cilerler/mssql-server-linux)](https://hub.docker.com/r/cilerler/mssql-server-linux)
-
-<!-- ![](https://img.shields.io/badge/docker-cilerler%2Fmssql--server--linux-blue.svg?logo=docker) -->
-[![](https://images.microbadger.com/badges/version/cilerler/mssql-server-linux:2019-CU14-ubuntu-16.04.svg) ![](https://images.microbadger.com/badges/image/cilerler/mssql-server-linux.svg)](https://microbadger.com/images/cilerler/mssql-server-linux "inspect on microbadger.com")
-
-
 # Microsoft SQL Server w/ Full-Text Search
 
 ## How to use this image
 
-```powershell
+```pwsh
 docker run -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=yourStrong(!)Password" -e "MSSQL_AGENT_ENABLED=true" -e "MSSQL_ENABLE_HADR=0" -p 1433:1433 -d cilerler/mssql-server-linux:latest
 ```
 
@@ -29,5 +23,19 @@ docker run -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=yourStrong(!)Password" -e "MSSQL_A
 
 For a complete list of environment variables that can be used, refer to the documentation [here](https://docs.microsoft.com/en-us/sql/linux/quickstart-install-connect-docker).
 
+## Adding SQL Server Integration Services (SSIS)
+
+> [!WARNING] 
+> Integration Services is not working in Docker yet.
+> https://github.com/Microsoft/mssql-docker/issues/213
+
 **SSIS_PID** is the Product ID (PID) or Edition that SSIS will run with.
 For more details https://hub.docker.com/_/microsoft-mssql-server
+
+```pwsh
+&& apt-get install -y \
+	mssql-server-is \
+&& echo "[TELEMETRY]\nenabled = F" > /var/opt/ssis/ssis.conf \
+&& LC_ALL=en_US.UTF-8 ACCEPT_EULA=Y /opt/ssis/bin/ssis-conf -n setup \
+&& echo 'export PATH="$PATH:/opt/ssis/bin"' >> ~/.bashrc \
+```
